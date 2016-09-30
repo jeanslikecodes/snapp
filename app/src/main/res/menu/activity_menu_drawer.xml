@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/timelineMenuOpcao"
+            android:title="Timeline"
+            tools:icon="@drawable/timelineicon2"
+            android:icon="@drawable/timelineicon3" />
+        <item
+            android:id="@+id/meusAnunMenu"
+            android:icon="@drawable/grad"
+            android:title="Meus Anúncios" />
+        <item
+            android:id="@+id/criarAnunMenu"
+            android:icon="@drawable/addad"
+            android:title="Criar Anúncio" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/minha_conta"
+                android:icon="@drawable/account"
+                android:title="Minha Conta" />
+            <item
+                android:id="@+id/sobreApp"
+                android:icon="@drawable/about"
+                android:title="Sobre o App" />
+            <item
+                android:id="@+id/sairMenu"
+                android:icon="@drawable/exit"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

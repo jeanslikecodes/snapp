@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_itens_anuncio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.ctp.projetofinalsnapp.itens_anuncio">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Tamanho:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textStyle="normal|italic"
+            android:layout_alignBottom="@+id/idPrecoItens"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Tamanho(Real)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTamanhoItens"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/idUsernameItens"
+            android:textSize="17dp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:text="Produto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idProdutoItens"
+            android:textStyle="normal|bold"
+            android:textSize="25sp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/idUsernameItens"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="está anunciando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textSize="17dp"
+            android:textStyle="normal|italic"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/idUsernameItens"
+            android:layout_toEndOf="@+id/idUsernameItens" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idPrecoItens"
+            android:textSize="40dp"
+            android:textStyle="normal|bold"
+            android:layout_alignTop="@+id/idProdutoItens"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="?android:attr/textColorHint" />
+
+    </RelativeLayout>
+</RelativeLayout>

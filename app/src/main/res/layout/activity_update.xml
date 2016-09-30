@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.ctp.projetofinalsnapp.UpdateActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/id">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:text="Digite tipo e marca do produto:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ex.: Shoulder Schutt Varsity 3.0 Flex"
+            android:textStyle="normal|italic"
+            android:ems="10"
+            android:id="@+id/idProdutoUpdate" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:text="Digite o tamanho do produto:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ex.: XS/S/M/L/XL"
+            android:textStyle="normal|italic"
+            android:ems="10"
+            android:id="@+id/idTamanhoUp" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:text="Digite o preço do produto:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:hint="Ex.: 1.350,00"
+            android:id="@+id/idPrecoUpdate"
+            android:textStyle="normal|italic" />
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:text="Atualizar"
+            android:onClick="alterarAnuncio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCadastrarUpdate"
+            android:textStyle="normal|bold"
+            android:textSize="17dp" />
+
+        <Button
+            android:text="Remover"
+            android:onClick="removerAnuncio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRemoverUpdate"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</RelativeLayout>
